@@ -13,12 +13,12 @@ html,body{
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: rgb(146, 248, 248);
+    background-color: rgb(238, 245, 245);
     position: relative;
 }
 
 nav{
-    
+    padding: 1vw 3vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -27,24 +27,29 @@ nav{
 
 #logo{
     margin-top: 15px;
-    max-width: 200px; /* You can use a specific value like pixels or percentage */
+    max-width: 200px; 
     height: auto;
-    padding-left: 20px;
+    
 }
 
 .nav-part2{
     display: flex;
     align-items: center;
     gap: 1.2vw; 
-    padding-right: 20px;
+   
 }
 
 .nav-part2 h4{
-   padding :10px 20px;
+    padding :10px 20px;
     border :1px solid #8a8a8a89;
     border-radius: 50px;
     font-weight: 500;
     color: black;
+    font-size: 18px;
+    position: relative;
+}
 
+#nav-part2 h4::after{
+    content: "a";
 }
 
