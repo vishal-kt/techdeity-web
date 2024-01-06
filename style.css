@@ -1,3 +1,15 @@
+@font-face
+{
+    font-family: neu;
+   src: url(/assets/NeueHaasDisplay-Mediu.woff) format("woff");
+}
+@font-face
+{
+    font-family: neubold;
+   src: url(/assets/NeueHaasDisplay-Roman.woff) format("woff");
+   font-weight: bold;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,8 +39,8 @@ nav{
 }
 
 #logo{
-    margin-top: 15px;
-    max-width: 200px; 
+    margin-top: 1vh;
+    max-width: 150px; 
     height: auto;
     
 }
@@ -70,6 +82,7 @@ nav{
 #nav-part2 h4:hover::after{
     bottom: 0;
     border-radius:0 ;
+    padding: 5px;
     
 }
 #nav-part2 h4 a{
@@ -78,13 +91,60 @@ nav{
     color: #000;
     z-index: 9;
     position: relative;
-
+    font-family: "neubold";
 }
 
 #nav-part2 h4 a:hover{
     color: #fff;
+
+}
+  
+
+#center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid #000000;
+    
 }
 
+
+ #left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction: column;
+    margin: 25px;
+
+}
+
+#left h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #000000;
+    font-family: "neubold";
+}
+
+#left span{
+     color: #ff3c00;
+     font-family: "neu";
+}
+
+#left h2{
+    font-family:'neu';
+}
+
+#left p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'neubold';
+}
 
 
 
