@@ -28,6 +28,7 @@ html,body{
     width: 100%;
     background-color: rgb(238, 245, 245);
     position: relative;
+    padding: 0 2vw;
 }
 
 nav{
@@ -53,7 +54,7 @@ nav{
 }
 
 
-#nav-part2 h4{
+#nav-part2 h4 {
     padding :10px 20px;
     border :1px solid #8a8a8a89;
     border-radius: 50px;
@@ -146,6 +147,26 @@ nav{
     font-family: 'neubold';
 }
 
+.btn-hire{
+    padding: 10px 10px ;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    margin-top: 0.5vw;
+    text-decoration: none;
+    font-family: "neubold";
+}
+
+#right h1{
+    font-size: 8vw;
+    line-height:6vw;
+    text-align:right;
+}
 
 
 
