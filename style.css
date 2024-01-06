@@ -24,9 +24,9 @@ html,body{
 
 
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: rgb(238, 245, 245);
+    background-color: rgb(233, 217, 217);
     position: relative;
     padding: 0 2vw;
 }
@@ -127,15 +127,18 @@ nav{
 }
 
 #left h1{
-    font-size: 50px;
+    font-size:5vw ;
     font-weight: 600;
     color: #000000;
     font-family: "neubold";
+    line-height:5vw;
 }
 
 #left span{
      color: #ff3c00;
      font-family: "neu";
+    
+        
 }
 
 #left h2{
@@ -166,8 +169,8 @@ nav{
 }
 
 .custom-btn:hover {
-    background: linear-gradient(to right, #fafafa, #fd6500);
-    color: #000;
+    background: linear-gradient(to right, #ffe600, #000000);
+    color: #ffffff;
   }
   
 #right h1{
@@ -176,6 +179,11 @@ nav{
     text-align:right;
 }
 
+#page1 video{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 4vw;    
+}
 
 
 
