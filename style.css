@@ -43,6 +43,7 @@ nav{
     margin-top: 1vh;
     max-width: 150px; 
     height: auto;
+    margin-bottom: 5vh;
     
 }
 
@@ -108,6 +109,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    padding-bottom: 3vw;
     border-bottom: 1px solid #000000;
     
 }
@@ -145,23 +147,29 @@ nav{
     font-weight: 500;
     color: #000000;
     font-family: 'neubold';
+    margin-bottom: 2vw;
 }
 
-.btn-hire{
-    padding: 10px 10px ;
-    border: 1px solid #000000;
-    border-radius: 50px;
-    font-weight: 500;
-    color: #000000;
-    font-size: 18px;
-    position: relative;
-    transition: all ease 0.4s;
-    overflow: hidden;
-    margin-top: 0.5vw;
+.custom-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
     text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #051406, #f38021);
+    color: #fff;
+    transition: background 0.3s ease;
     font-family: "neubold";
 }
 
+.custom-btn:hover {
+    background: linear-gradient(to right, #fafafa, #fd6500);
+    color: #000;
+  }
+  
 #right h1{
     font-size: 8vw;
     line-height:6vw;
