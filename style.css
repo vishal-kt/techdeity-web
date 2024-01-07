@@ -185,7 +185,16 @@ nav{
     margin-top: 4vw;    
 }
 
-
+#hero-shape{
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    background-color: #fe320a;
+    right: 0;
+    top: 65vh;
+    filter: blur(20px);
+    border-radius: 50%;
+}
 
 
 
