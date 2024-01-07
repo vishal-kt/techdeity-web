@@ -135,11 +135,14 @@ nav{
 }
 
 #left span{
-     color: #ff3c00;
-     font-family: "neu";
-    
-        
+    background: linear-gradient(45deg, #4285f4, #f06292, #fe320a);
+    font-family: "neu";
+    -webkit-background-clip: text;
+    color: transparent; /* Hides the original text */
+    transition: background 0.3s ease-in-out; /* Adds a smooth transition effect */
+
 }
+
 
 #left h2{
     font-family:'neu';
@@ -162,7 +165,7 @@ nav{
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right, #051406, #f38021);
+    background: linear-gradient(45deg, #4285f4, #f06292, #fe320a);
     color: #fff;
     transition: background 0.3s ease;
     font-family: "neubold";
@@ -187,15 +190,20 @@ nav{
 
 #hero-shape{
     position: absolute;
-    width: 36vw;
+    width: 46vw;
     height: 36vw;
-    background-color: #fe320a;
     right: 0;
     top: 65vh;
-    filter: blur(20px);
-    border-radius: 50%;
 }
-
+ 
+#hero-1{
+    background: linear-gradient(45deg, #4285f4, #f06292, #fe320a);    
+    filter: blur(20px);
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50% ;
+}
 
 
 
