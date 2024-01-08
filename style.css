@@ -249,10 +249,10 @@ nav{
 
 @keyframes anime2 {
     from{
-        transform: translate(5%,-3%);
+        transform: translate(5%,-5%);
     }
     to{
-        transform: translate(-20%,20%);
+        transform: translate(-20%,30%);
     }
 }
 
@@ -260,32 +260,30 @@ nav{
     min-height: 100vh;
     width: 100%;
     background-color:rgb(233, 217, 217);
-    /* position: relative;
-    padding: 0 2vw; */
+    /* position: relative; */
+    padding: 0 2vw;
 }
 
 #moving-text{
-    white-space: nowrap;
-
+    white-space:nowrap ;
 }
 
 .con{
- 
     white-space: nowrap;
-    display: inline-block;
-    background-color: rgb(255, 116, 3);
+    /* background-color: rgb(255, 116, 3); */
+    display: inline-block;  
 }
-
 #moving-text h1{
-    font-size: 8vw;
+    font-size: 9vw;
+    /* background-color: lightblue; */
     display: inline-block;
 }
 #gola{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #4285f4, #f06292, #fe320a);
     display: inline-block;
+    background: linear-gradient(45deg, #4285f4, #f06292, #fe320a);
 }
 
 
