@@ -17,3 +17,13 @@ const another_array = [1,2,3,4,[7,6,8],[4,3,2,1,[4,5,6,7]]]
 
 const single_array =another_array.flat(Infinity)
  console.log(single_array);
+
+console.log(Array.from("vishal"))
+
+const obj ={name:"vishal"};
+const valueArray = Object.values(obj);
+console.log(valueArray);
+console.log(Array.of("vishal"));
+
+console.log(Array.from("vishal"));
+
