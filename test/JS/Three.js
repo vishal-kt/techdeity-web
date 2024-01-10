@@ -5,24 +5,24 @@ person.city = "New Delhi";
 person.greet = function () {
     console.log(`Hello, ${this.name}!`);
 }
-// person.greet();
+person.greet();
 
 const obj1 = {1:"a",2:"b"}
 const obj2 = new Object()
 obj2[3] = "c"
 obj2[4] = "d"
 
-// const obj3 = {obj1,obj2}
+const obj3 = {obj1,obj2}
 
 // const obj3 = Object.assign(obj1,obj2)
-const obj3 = {...obj1 ,...obj2}
-// console.log(obj3);
+// const obj3 = {...obj1 ,...obj2}
+console.log(obj3);
 
-// console.log(Object.keys(person));
+console.log(Object.keys(person));
 
-// console.log(Object.values(person));
+console.log(Object.values(person));
 
-// console.log(Object.entries(person));
+console.log(Object.entries(person));
 
 const users =[
     {
@@ -47,9 +47,11 @@ const users =[
     }
 ]
 
-// console.log(users[3].name.charAt(1).toUpperCase());
-// console.log(person.hasOwnProperty('name'));
+console.log(users[3].name.charAt(1).toUpperCase());
+console.log(person.hasOwnProperty('name'));
 
-// console.log(person.hasOwnProperty('greet')); 
+console.log(person.hasOwnProperty('greet')); 
 
 console.log(users[1].hasOwnProperty('name'));
+console.log(person.constructor); 
+
