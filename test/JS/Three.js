@@ -47,4 +47,9 @@ const users =[
     }
 ]
 
-console.log(users[3].name.charAt(1).toUpperCase());
+// console.log(users[3].name.charAt(1).toUpperCase());
+// console.log(person.hasOwnProperty('name'));
+
+// console.log(person.hasOwnProperty('greet')); 
+
+console.log(users[1].hasOwnProperty('name'));
