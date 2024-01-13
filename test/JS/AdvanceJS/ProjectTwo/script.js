@@ -11,7 +11,7 @@ function liveValidation() {
 
     // Convert input values to numbers
     var height = parseFloat(heightInput);
-    var weight = parseFloat(weightInput);
+    let weight = parseFloat(weightInput);
 
     // Check if the inputs are valid numbers
     if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
@@ -23,5 +23,20 @@ function liveValidation() {
 }
 
 function calculateBMI() {
-    
+
+    let heightInput = document.getElementById("height").value;
+     let weightInput = document.getElementById("weight").value;
+     
+
+            // Convert input values to numbers
+            let height = parseFloat(heightInput);
+            let weight = parseFloat(weightInput);
+            // Calculate BMI
+            let bmi = weight / (height * height);
+
+            // Display the result
+            document.getElementById("result").innerHTML = "Your BMI is: " + bmi.toFixed(2);
 }
+
+var button = document.getElementById("calculate");
+button.addEventListener("click", calculateBMI);
