@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c0606;
+    flex-direction: column;
+}
+
+#banner{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#clock{
+    font-size: 3rem;
+    background-color: #c7fc07;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+
+    
+    
+}
