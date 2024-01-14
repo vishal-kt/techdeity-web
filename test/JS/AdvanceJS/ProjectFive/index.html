@@ -17,8 +17,14 @@
         <form class="form">
             <label for="guessField" id="guess">Guess a Number</label>
             <input type="text" id="guessField" class="guessField">
-            <input type="submit" value="Submit guess" class="guessSubmit">
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
         </form>
+
+        <div class="resultParas">
+            <p>Previous Guess : <span class="guesses"></span></p>
+            <p>Guess Remaining : <span class="lastResult">10</span></p>
+            <p class="low"></p>
+        </div>
     </div>
     
     <script src="script.js"></script>
