@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+
+#main {
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Replace these colors with your desired gradient colors */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+
+.guessField{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.guessSubmit {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.guessSubmit:hover {
+    background-color: #333; /* Darken the background color on hover if desired */
+}
