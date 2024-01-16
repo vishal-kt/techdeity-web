@@ -53,3 +53,9 @@ h1 {
 .guessSubmit:hover {
     background-color: #333; /* Darken the background color on hover if desired */
 }
+
+.lowOrHigh{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
