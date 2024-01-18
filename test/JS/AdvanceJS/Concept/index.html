@@ -24,20 +24,33 @@
 
     <script>    
 
-        document.getElementById('images').addEventListener('click',function (e) {
-            console.log("clicked inside the images");
-        },false)
+        // document.getElementById('images').addEventListener('click',function (e) {
+        //     console.log("clicked inside the images");
+        // },false)
 
-        document.getElementById('a').addEventListener('click' ,function(e) {
-            console.log('click inside the image of hand');
-             e.stopPropagation()
-        },false)
+        // document.getElementById('a').addEventListener('click' ,function(e) {
+        //     console.log('click inside the image of hand');
+        //      e.stopPropagation()
+        // },false)
 
-        document.getElementById('perplexity').addEventListener('click',function (e) {
+        // document.getElementById('perplexity').addEventListener('click',function (e) {
             
-            e.preventDefault();
-            e.stopPropagation();
-            console.log("Google Clicked");
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        //     console.log("Google Clicked");
+        // })
+
+        document.getElementById('images').addEventListener('click',function (e) {
+        
+            console.log(e.target.parentNode);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        })
+
+        document.querySelector('#images').addEventListener('mousemove', function (s) {
+            console.log(s.target.parentNode);
+            let removee = s.target.parentNode
+            removee.removeChild()
         })
     </script>
 </body>
