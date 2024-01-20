@@ -25,7 +25,8 @@ startChanging = function () {
 
 }
 stopChanging = function () {
-    clearInterval(intervalId)
+    clearInterval(intervalId);
+    intervalId = null
 };
 
 start.addEventListener('click',startChanging);
