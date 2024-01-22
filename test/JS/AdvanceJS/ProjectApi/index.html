@@ -4,20 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background-color: #312020;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+    
+        .profile-card {
+          background-color: #c0e1fc;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          overflow: hidden;
+          width: 300px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+    
+        .profile-image {
+          min-width: 100px;
+          max-width:150px;
+          background-image: url('profile-picture.jpg'); /* Add your image URL here */
+          background-size: cover;
+          border-radius: 50%;
+          border: 2px solid #8bb1cf;
 
-    <div id="main">
-        <div id="card">
-            
-            
-            
+         
+        }
+    
+        .profile-info {
+          padding: 20px;
+        }
+    
+        .profile-info h2 {
+          margin-top: 0;
+        }
+    
+        .profile-info p {
+          margin-bottom: 0;
+          color: #555;
+        }
+    
+        .social-links {
+          margin-top: 20px;
+        }
+    
+        .social-link {
+          display: inline-block;
+          margin-right: 10px;
+        }
+    
+        .social-link img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="profile-card">
+    
+        <img class="profile-image" src="./visha.jpeg" alt="">
+      
+      <div class="profile-info">
+        <h2>Vishal Kumar</h2>
+        <p>Full Stack Mobile and Web Developer</p>
+        <p>Location: Kanpur, India</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/imvishalvk" class="social-link"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+          <a href="https://twitter.com/techdeitytweets" class="social-link"><img src="https://www.shutterstock.com/image-vector/pakistan-07-30-2023-new-600nw-2340851903.jpg" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/in/imvishalvk/" class="social-link"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn"></a>
+          <a href="https://www.github.com/vishal-kt" class="social-link"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="LinkedIn"></a>
         </div>
-
-
+      </div>
     </div>
+    
+    
     
     <script>
         const requestUrl= 'https://api.github.com/users/vishal-kt'
