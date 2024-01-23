@@ -33,14 +33,26 @@ const promiseThree = new Promise (function (resolve,reject) {
     }, 1000);
 })
 
-promiseThree.then((user)=>{
+// promiseThree.then((user)=>{
 
+//     console.log(user);
+//     return user.username;
+// })
+// .catch((error)=>{
+//     console.log(error);
+// })
+// .finally(()=>{
+//     console.log("This is Final");
+// })
+
+
+promiseThree.then((user) => {
     console.log(user);
-    return user.username
+    return user.username; // Use user, not username
 })
-.catch((error)=>{
+.catch((error) => {
     console.log(error);
 })
-.finally(()=>{
+.finally(() => {
     console.log("This is Final");
-})
+});
