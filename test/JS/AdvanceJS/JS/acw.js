@@ -1,35 +1,44 @@
-const promiseFive = new Promise(function (resolve,reject) {
-    setTimeout(() => {
-        let err = true 
-        if(!err){
-            resolve({username:"java",code :"vk250"})
-        }else{
-            reject("Error : Something Went Wrong Horrible")
-        }
-    }, 1000);
+// const promiseFive = new Promise(function (resolve,reject) {
+//     setTimeout(() => {
+//         let err = true 
+//         if(!err){
+//             resolve({username:"java",code :"vk250"})
+//         }else{
+//             reject("Error : Something Went Wrong Horrible")
+//         }
+//     }, 1000);
+// })
+
+// async function consumePromiseFive() {
+//     try{
+//         const res = await promiseFive
+//         console.log(res);
+//     }catch(err){
+//         console.log(err);
+//     }finally{
+//         console.log("this will run no matter what");
+//     }
+//  }
+
+//  consumePromiseFive()
+
+//  async function getAllUser() {
+//     try {
+//         const res = await fetch('https://api.github.com/users/vishal-kt')
+//         const data = await res.json()
+//         console.log(data.login);
+//     } catch (error) {
+//         console.log("E:" ,error);
+//     }
+//  }
+
+//  getAllUser()
+
+fetch('https://api.github.com/users/vishal-kt').then((response)=>{
+    return response.json()
+}).then((response)=>{
+    console.log(response.login);
+}).catch((error)=>console.log('something went wrong')).finally(()=>{
+    console.log("this is end of the code ");
 })
 
-async function consumePromiseFive() {
-    try{
-        const res = await promiseFive
-        console.log(res);
-    }catch(err){
-        console.log(err);
-    }finally{
-        console.log("this will run no matter what");
-    }
- }
-
- consumePromiseFive()
-
- async function getAllUser() {
-    try {
-        const res = await fetch('https://api.github.com/users/vishal-kt')
-        const data = await res.json()
-        console.log(data.login);
-    } catch (error) {
-        console.log("E:" ,error);
-    }
- }
-
- getAllUser()
