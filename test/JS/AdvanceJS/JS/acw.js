@@ -24,9 +24,9 @@ async function consumePromiseFive() {
 
  async function getAllUser() {
     try {
-        const res = await fetch('https://jsonplaceholder.typicode.com/users')
+        const res = await fetch('https://api.github.com/users/vishal-kt')
         const data = await res.json()
-        console.log(data);
+        console.log(data.login);
     } catch (error) {
         console.log("E:" ,error);
     }
