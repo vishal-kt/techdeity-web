@@ -58,5 +58,21 @@ xhr.onreadystatechange = function () {
     }
 };
 
+fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/PM_at_the_Pran_Pratishtha_ceremony_of_Shree_Ram_Janmaboomi_Temple_in_Ayodhya%2C_Uttar_Pradesh_on_January_22%2C_2024_%28cropped%29.jpg/220px-PM_at_the_Pran_Pratishtha_ceremony_of_Shree_Ram_Janmaboomi_Temple_in_Ayodhya%2C_Uttar_Pradesh_on_January_22%2C_2024_%28cropped%29.jpg')
+  .then(response => response.blob())
+  .then(blob => {
+    // Handle the blob, for example, display an image
+    const imageUrl = URL.createObjectURL(blob);
+    console.log(imageUrl);
+    const img = document.createElement('img');
+    img.src = imageUrl;
+    document.body.appendChild(img);
+    console.log(img);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 
+
+ 
